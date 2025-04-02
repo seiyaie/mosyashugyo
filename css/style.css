@@ -1,0 +1,190 @@
+/* common */
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 760px;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+/* header */
+
+header {
+    background: linear-gradient(90deg, rgba(253, 219, 146, 1), rgba(209, 253, 254, 1));
+    width: 100%;
+    margin-bottom: 60px;
+    min-height: 160px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 116px;
+    height: 116px;
+    vertical-align: bottom;
+    border: 4px solid #fff;
+    position: absolute;
+    top: 100px;
+}
+
+/* profile */
+
+.profile {
+    padding-top: 16px;
+}
+
+.profile-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.id-name {
+    font-size: 12px;
+}
+
+.profile-desc {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.hp-name {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* works */
+
+.works {
+    padding: 64px 0;
+}
+
+.work + .work {
+    margin-top: 40px;
+}
+
+.work-pic {
+    border-radius: 14px;
+    width: 100%;
+}
+
+.company-name {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* sns */
+
+.sns {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.sns p {
+    font-size: 18px;
+}
+
+.sns address {
+    margin-top: 16px;
+}
+
+.sns address a + a {
+    margin-left: 12px;
+}
+
+/* footer */
+
+footer {
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+small {
+    font-size: 12px;
+}
+
+/* large screen */
+
+@media (min-width: 600px) {
+    /* header */
+
+    header {
+        height: 200px;
+        margin-bottom: 80px;
+    }
+
+    .profile-pic {
+        width: 154px;
+        height: 154px;
+        vertical-align: bottom;
+        border: 6px solid #fff;
+        position: absolute;
+        top: 120px;
+    }
+
+    /* profile */
+
+    .profile {
+        padding-top: 24px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .id-name {
+        font-size: 14px;
+    }
+
+    .hp-name {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+    .profile-desc {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    /* works */
+    .works {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .work {
+        width: calc((100% - 80px) / 2);
+        box-sizing: border-box;
+    }
+
+    .work:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .company-name {
+        font-size: 18px;
+    }
+
+    /* sns */
+
+    .sns {
+        margin-bottom: 80px;
+    }
+}
